@@ -1,0 +1,219 @@
+/*מגישות: קורל צלח 318609500 וקארין ואנונו 212132898*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dce6f0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* תפריט ניווט */
+nav {
+    width: 100%;
+    background-color: #1f5a85;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    padding: 10px 20px;
+    flex: 1;
+}
+
+h1 {
+    color: #1f5a85;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+/* עיצוב כריכת הספר ב-CSS טהור */
+.book-card {
+    width: 230px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    text-align: left;
+    overflow: hidden;
+}
+
+/* חלק עליון אפור */
+.book-top {
+    background-color: #e6e7e8;
+    padding: 10px 12px 6px 12px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.oreilly-badge {
+    background-color: #333;
+    color: #fff;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 2px 5px;
+    letter-spacing: 0.5px;
+}
+
+.quote {
+    font-size: 6.5px;
+    color: #555;
+    line-height: 1.2;
+    max-width: 120px;
+}
+
+.book-author-top {
+    text-align: right;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+/* חלק אמצעי לבן */
+.book-middle {
+    background-color: #ffffff;
+    padding: 12px 14px;
+    text-align: right;
+}
+
+.book-middle h2 {
+    font-size: 24px;
+    line-height: 1.05;
+    color: #2b2b2b;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+/* חלק תחתון צהוב */
+.book-bottom {
+    background-color: #f4d61d;
+    height: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.js-letters {
+    display: flex;
+    align-items: baseline;
+    font-size: 125px;
+    font-weight: 900;
+    color: #333333;
+    line-height: 1;
+    letter-spacing: -4px;
+}
+
+.letter-j {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.vertical-sub {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 7.5px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #f4d61d;
+    background-color: #333333;
+    padding: 3px 1px;
+    margin-right: -18px;
+    z-index: 2;
+}
+
+/* טקסטים מתחת לספר */
+.author {
+    color: #1f5a85;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.description {
+    text-align: left;
+    max-width: 330px;
+    margin: 0 auto 30px auto;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* עיצוב דפי אודות וצור קשר */
+.content-box {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    direction: rtl;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.contact-form button {
+    background-color: #1f5a85;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #164263;
+}
+
+footer {
+    color: #1f5a85;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 20px 0;
+}
